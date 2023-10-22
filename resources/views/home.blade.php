@@ -1,24 +1,19 @@
 @extends('layouts.app')
 
+
 @section('content')
-<div class="container">
+<div class="container position-relative" data-aos="fade-up" data-aos-delay="100">
     <div class="row justify-content-center">
-        <div class="col-md-8">
-            <div class="card">
-                <div class="card-header">{{ __('Dashboard') }}</div>
-
-                <div class="card-body">
-                    @if (session('status'))
-                    <div class="alert alert-success" role="alert">
-                        {{ session('status') }}
-                    </div>
-                    @endif
-
-                    {{ __('You are logged in!') }}
-                    <a href="{{ url('/chat') }}">Chat</a>
-                </div>
+        <br>
+        <br>
+        <center>
+            <div class="col-xl-7 col-lg-9 text-center">
+              <h1>Welcome to simple ChatApp</h1>
+              <h2>This ChatApp was created to complete the fullstack engineer assessment</h2>
             </div>
-        </div>
+          </div>
+        </center>
+    <div class="text-center">
+      <a href="{{ url('/chat') }}" class="btn btn-primary btn-lg">Get Started</a>
     </div>
-</div>
 @endsection

@@ -13,7 +13,7 @@
     />
 
     <span class="input-group-btn">
-      <button class="btn btn-primary btn-sm" id="btn-chat" @click="sendMessage">
+      <button class="btn btn-dark" id="btn-chat" @click="sendMessage">
         Send
       </button>
     </span>
